@@ -8,7 +8,7 @@
     --color-charcoal: #2D2D2D;
     --color-sand: #EAE0D5;
     --color-white: #FFFFFF;
-    
+
     /* Typography */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
@@ -23,8 +23,8 @@
     /* Container */
     --container-width: 1200px;
     --border-radius: 12px;
-    --shadow-soft: 0 10px 30px -10px rgba(0,0,0,0.08);
-    --shadow-hover: 0 20px 40px -10px rgba(0,0,0,0.12);
+    --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -45,7 +45,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--font-heading);
     color: var(--color-charcoal);
     font-weight: 700;
@@ -137,7 +140,7 @@ img {
     background-color: rgba(249, 247, 242, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .nav-container {
@@ -262,9 +265,17 @@ img {
 }
 
 @keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* Catalog Section */
@@ -308,7 +319,8 @@ img {
     overflow: hidden;
     margin-bottom: 1.5rem;
     box-shadow: var(--shadow-soft);
-    aspect-ratio: 1 / 1; /* Creates a square container */
+    aspect-ratio: 1 / 1;
+    /* Creates a square container */
 }
 
 .book-cover img {
@@ -340,7 +352,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5px; /* Visual center for play icon */
+    padding-left: 5px;
+    /* Visual center for play icon */
 }
 
 .book-card:hover .play-btn {
@@ -425,92 +438,6 @@ img {
     margin-top: 2px;
 }
 
-/* Pricing Section */
-.pricing {
-    padding: var(--spacing-xl) 0;
-    background-color: var(--color-white);
-}
-
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    align-items: start;
-}
-
-.pricing-card {
-    background: var(--color-cream);
-    padding: 2.5rem;
-    border-radius: var(--border-radius);
-    text-align: center;
-    border: 1px solid transparent;
-    position: relative;
-}
-
-.pricing-card.featured {
-    background: var(--color-white);
-    border: 2px solid var(--color-terra);
-    box-shadow: var(--shadow-hover);
-    transform: scale(1.05);
-    z-index: 1;
-}
-
-.best-value {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--color-terra);
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
-
-.pricing-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.price {
-    font-size: 3rem;
-    font-family: var(--font-heading);
-    color: var(--color-charcoal);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.price span {
-    font-size: 1rem;
-    color: #777;
-    font-family: var(--font-body);
-}
-
-.desc {
-    color: #666;
-    margin-bottom: 2rem;
-}
-
-.benefits {
-    text-align: left;
-    margin-bottom: 2rem;
-}
-
-.benefits li {
-    margin-bottom: 0.8rem;
-    padding-left: 20px;
-    position: relative;
-    color: #555;
-}
-
-.benefits li::before {
-    content: "•";
-    color: var(--color-sage);
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-}
 
 /* Footer */
 .footer {
@@ -559,52 +486,53 @@ img {
 .copyright {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 0.5;
     font-size: 0.9rem;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-    .hero-container, .clubs-container {
+
+    .hero-container,
+    .clubs-container {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .floating-badge {
-        display: none; /* Hide for simpler mobile view */
+        display: none;
+        /* Hide for simpler mobile view */
     }
-    
+
     .clubs-image {
-        order: -1; /* Image first on mobile */
+        order: -1;
+        /* Image first on mobile */
     }
 
     .footer-container {
         grid-template-columns: 1fr 1fr;
     }
-    
-    .pricing-card.featured {
-        transform: scale(1);
-    }
 }
 
 @media (max-width: 600px) {
     .nav-links {
-        display: none; /* In a real app, I'd code the JS toggle */
+        display: none;
+        /* In a real app, I'd code the JS toggle */
     }
-    
+
     .mobile-menu-btn {
         display: flex;
     }
-    
+
     .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -614,7 +542,7 @@ img {
         width: 100%;
         background: var(--color-cream);
         padding: 20px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
 
     .footer-container {
@@ -624,5 +552,68 @@ img {
 
     .footer-brand {
         margin-bottom: 2rem;
+    }
+}
+
+/* Waitlist Section */
+.waitlist {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-sage);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.waitlist-content h2 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-sm);
+    font-size: 2.5rem;
+}
+
+.waitlist-content p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.waitlist-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto var(--spacing-sm);
+}
+
+.waitlist-form input {
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    flex-grow: 1;
+    font-size: 1rem;
+    font-family: var(--font-body);
+}
+
+.waitlist-form input:focus {
+    outline: 2px solid var(--color-terra);
+}
+
+.waitlist-form button {
+    white-space: nowrap;
+}
+
+.small-text {
+    font-size: 0.9rem !important;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .waitlist-form {
+        flex-direction: column;
+    }
+
+    .waitlist-form button {
+        width: 100%;
     }
 }
