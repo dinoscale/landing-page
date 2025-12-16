@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gather & Read - Cozy Audiobooks & Book Clubs</title>
+    <meta name="description" content="Join the coziest audiobook community. listen to great stories and discuss them with clear audio and friendly clubs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Gather & Read</a>
+            <div class="nav-links">
+                <a href="#catalog">Catalog</a>
+                <a href="#clubs">Clubs</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#" class="btn btn-primary small">Get Started</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Stories are better when shared.</h1>
+                <p>Immerse yourself in a world of audiobooks and join a community that loves listening as much as you do. Your next favorite book is waiting.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">Join the Club</a>
+                    <a href="#catalog" class="btn btn-secondary">Explore Library</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="assets/hero.png" alt="Person reading comfortably in a cozy room" class="hero-image">
+                <div class="floating-badge badge-1">
+                    <span class="icon">🎧</span>
+                    <div class="text">
+                        <strong>Over 10k+</strong>
+                        <span>Audiobooks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated for You</h2>
+                <p>Discover our top picks for this month across different genres.</p>
+            </div>
+            
+            <div class="book-grid">
+                <!-- Book Card 1 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/mystery.png" alt="The Silent Echo Book Cover">
+                        <button class="play-btn" aria-label="Preview The Silent Echo">▶</button>
+                    </div>
+                    <div class="book-info">
+                        <h3>The Silent Echo</h3>
+                        <p class="author">Byron Vance</p>
+                        <div class="tags">
+                            <span class="tag">Mystery</span>
+                            <span class="tag">Thriller</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Book Card 2 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/scifi.png" alt="Stellar Horizon Book Cover">
+                        <button class="play-btn" aria-label="Preview Stellar Horizon">▶</button>
+                    </div>
+                    <div class="book-info">
+                        <h3>Stellar Horizon</h3>
+                        <p class="author">Byron Vance</p>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Book Card 3 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="assets/romance.png" alt="Summer in Provence Book Cover">
+                        <button class="play-btn" aria-label="Preview Summer in Provence">▶</button>
+                    </div>
+                    <div class="book-info">
+                        <h3>Summer in Provence</h3>
+                        <p class="author">Isabelle Dubois</p>
+                        <div class="tags">
+                            <span class="tag">Romance</span>
+                            <span class="tag">Fiction</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Club Section -->
+    <section id="clubs" class="clubs">
+        <div class="container clubs-container">
+            <div class="clubs-image">
+                <img src="assets/community.png" alt="Book club community video chat interface" class="feature-image">
+            </div>
+            <div class="clubs-content">
+                <h2>Never Listen Alone</h2>
+                <p>Join exclusive book clubs, participate in live discussions with authors, and make friends who share your literary tastes. It's like a book club in your pocket.</p>
+                <ul class="feature-list">
+                    <li>
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>Weekly Discussions</strong>
+                            <p>Deep dive into chapters with community threads.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>Live Q&A</strong>
+                            <p>Voice chats with authors and narrators.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check">✓</span>
+                        <div>
+                            <strong>Reading Streaks</strong>
+                            <p>Track your progress together and earn badges.</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Find a Club</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that fits your reading style.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card">
+                    <h3>Explorer</h3>
+                    <div class="price">Free</div>
+                    <p class="desc">Perfect for casual listeners.</p>
+                    <ul class="benefits">
+                        <li>Access to public domain classics</li>
+                        <li>Join 1 public book club</li>
+                        <li>Ad-supported listening</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Sign Up Free</a>
+                </div>
+
+                <!-- Pro Tier (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="best-value">Most Popular</div>
+                    <h3>Bookworm</h3>
+                    <div class="price">$14.99<span>/mo</span></div>
+                    <p class="desc">For the dedicated listener.</p>
+                    <ul class="benefits">
+                        <li><strong>1 Credit</strong> per month (any book)</li>
+                        <li>Unlimited book clubs</li>
+                        <li><strong>30% off</strong> additional books</li>
+                        <li>Ad-free listening</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary full-width">Start Free Trial</a>
+                </div>
+
+                <!-- Family Tier -->
+                <div class="pricing-card">
+                    <h3>Family</h3>
+                    <div class="price">$24.99<span>/mo</span></div>
+                    <p class="desc">Share the love of stories.</p>
+                    <ul class="benefits">
+                        <li><strong>2 Credits</strong> per month</li>
+                        <li>Up to 4 accounts</li>
+                        <li>Parental controls</li>
+                        <li>Shared library</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Get Family Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">Gather & Read</a>
+                <p> bringing stories and people together through the power of voice.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="link-group">
+                    <h4>Community</h4>
+                    <a href="#">Clubs</a>
+                    <a href="#">Events</a>
+                    <a href="#">Guidelines</a>
+                </div>
+                <div class="link-group">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2024 Gather & Read. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
